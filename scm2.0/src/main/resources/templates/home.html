@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::#content},~{::title},~{::script})}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Contact Manager - Home</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SCM2.0</div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#" class="dark-mode-toggle">Dark</a></li>
+                <li><a href="#" class="login-button">Login</a></li>
+                <li><a href="#" class="signup-button">Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <h1>Welcome to Smart Contact Manager</h1>
+        <div class="main-content">
+            <img data-th-src="@{'/image/home.jpg'}" alt="Home Page Image">
+            <h2>Start Managing your contacts on cloud</h2>
+            <p>
+                Meggings kinfolk echo park stumptown DIY, kale chips beard jianbing tousled.
+                Chambray dreamcatcher trust fund, kitsch vice godard disrupt ramps hexagon mustache
+                umami snackwave tilde chillwave ugh. Pour-over meditation PBR&B pickled ennui celiac mlkshk
+                freegan photo booth af fingerstache pitchfork.
+            </p>
+            <div class="button-container">
+                <a href="#" class="button start-button">Start</a>
+                <a href="#" class="button login-button">Login</a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-features">
+            <h2>Features of SCM</h2>
+            <div class="features-container">
+                <div class="feature">
+                    <h3>Store Contact on Cloud</h3>
+                    <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="feature">
+                    <h3>Send Direct Email from Here</h3>
+                    <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div class="feature">
+                    <h3>Easy Export</h3>
+                    <p>Blue bottle crucifix vinyl post-ironic four dollar toast vegan taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi pug.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+            <button id="start-button">Let's Start</button>
+        </div>
+        <p>&copy; 2024 Smart Contact Manager. All rights reserved.</p>
+    </footer>
+    <script>
+        console.log("Home page");
+    </script>
+</body>
+</html>
+
+ 
+
